@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E067A;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+
+}
+
+footer{
+    color: white;
+}
+
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.introduction, .query, .message, .login-panel, footer {
+    padding: 50px 0;
+}
+
+.introduction h2, .query h2, .message h2, .login-panel h2 {
+    margin-bottom: 20px;
+}
+
+.query form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.query form button, .login-panel form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+h2{
+    color: #E7DF0C;
+}
+form button{
+    background-color: #7E0606;
+}
+.login-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            color: white;
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Exam Management System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="result.html">result</a></li>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="notice.html"> Notice</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="introduction">
+    <div class="container"><p>
+        <fieldset>
+        <h2>Welcome to our Exam Management System</h2>
+        <p>This system helps you manage exams efficiently and effectively.t's a special computer program that makes organizing and handling exams much easier. Imagine it as a smart tool that keeps track of students' tests, their scores, and other important information. With this system, teachers can create exams, manage schedules, and quickly check how well students did. It's like having a reliable friend to handle all the important details of exams so that teachers can focus on teaching and students on learning.<p>
+        !</p>
+        Exam management software is like a superhero for schools and teachers. It helps them in so many ways! First off, it saves a ton of time. Instead of dealing with stacks of papers and confusing spreadsheets, teachers can use the software to create, organize, and grade exams effortlessly. Plus, it keeps everything super organized. No more lost papers or mixed-up scores! The software neatly stores all the important information, making it easy for teachers to track student progress and share results. It's like having a magical assistant that makes exams stress-free and lets everyone focus on the fun part—learning</fieldset>
+    </div>
+</section>
+<aside class="login-panel">
+    <div class="container">
+        <h2>Login</h2>
+        <div class="login-form">
+       
+     
+        <form >
+            <legend>
+            
+                     <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Your Username"><p>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter Your password"><P>
+
+          
+
+            <button type="submit">Login</button>
+               
+            </legend>
+           
+        </form>
+    </div>
+    </div>
+</aside>
+
+<section class="query">
+    <div class="container">
+        <h2>Have a Query?</h2>
+      
+        <form>
+            <textarea placeholder="Enter your query here"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</section>
+
+<section class="message">
+    <div class="container">
+        <h2>Send a Message</h2>
+        <button id="openChat">contact Now</button>
+    </div>
+</section>
+
+
+
+<footer>
+    
+        <p>&copy; 2024 Exam Management System. All rights reserved.</p>
+   
+</footer>
+
+
+</body>
+</html>

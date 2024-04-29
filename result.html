@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Grade Sheet</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/snd.jpg'); /* Replace 'background-image.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        h2{
+            color: yellow;
+        }
+        label{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exam Management System</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        
+        <a href="contact.html">Contact</a>
+        <a href="result.html">Result</a>
+       
+        <a href="about.html">About Us</a>
+         <a href="notice.html"> Notice</a>
+    </nav>
+
+    <div class="container">
+        <h2>Exam Grade Sheet</h2>
+        <form>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" name="rollNumber" required>
+
+            <table >
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Max Marks</th>
+                        <th>Obtained Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Physics</td>
+                        <td>100</td>
+                        <td><input type="text" name="physicsMarks" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td>100</td>
+                        <td><input type="text" name="chemistryMarks" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>100</td>
+                        <td><input type="text" name="mathematicsMarks" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Computer</td>
+                        <td>100</td>
+                        <td><input type="text" name="computerMarks" required></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>100</td>
+                        <td><input type="text" name="englishMarks" required></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table> <p>
+
+            
+            <button> Generate gradesheet</button>
+        </form>
+    </div>
+
+</body>
+</html>
